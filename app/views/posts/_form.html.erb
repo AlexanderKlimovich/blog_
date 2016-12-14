@@ -17,13 +17,13 @@
     <%= f.text_field :title, class: 'form-control' %>
   </div>
 
- <div class="form-group">
-    <%= f.file_field :image %>
+  <div class="editor">
+    <%= f.label :body %>
+    <%= f.trix_editor :body, class: 'editor' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :body %>
-    <%= f.trix_editor :body, class: 'editor' %>
+    <%= f.file_field :image %>
   </div>
 
   <div class="form-group">

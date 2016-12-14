@@ -33,10 +33,18 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
    end  	 
   end
 
-  def destroy
+   def destroy
     @post.destroy
-    redirect_to posts_path, success: 'Статья успешно удалена'
-  end	
+    respond_to do |format|
+      format.html { redirect_to posts_url, notice: 'Статья успешно удалена' }
+      format.json { head :no_content }
+    end
+   end 
+
+  # def destroy
+  #   @post.destroy
+  #   redirect_to posts_path, success: 'Статья успешно удалена'
+  # end	
 
   private 
 
