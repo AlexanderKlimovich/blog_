@@ -20,6 +20,7 @@ test:
   <<: *default
   database: blog_test
 
+
 production:
   <<: *default
-  database: postgresql
+  database: blog
