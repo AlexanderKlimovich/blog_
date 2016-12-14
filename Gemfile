@@ -19,6 +19,10 @@ gem 'bootstrap'
 
 gem 'trix'
 
+gem 'carrierwave'
+
+gem "mini_magick"
+
 gem 'rails-assets-tether'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
