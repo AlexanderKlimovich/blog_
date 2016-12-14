@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap'
 
-gem 'bootstrap-sass'
+gem 'trix'
 
 gem 'rails-assets-tether'
 # Use jquery as the JavaScript library
